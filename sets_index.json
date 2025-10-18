@@ -1,0 +1,80 @@
+{
+  "sets": [
+    {
+      "name": "SD01 - ตัวตึงไกรลาส",
+      "path": "Starter Deck/SD01 - ตัวตึงไกรลาส/info.json"
+    },
+    {
+      "name": "SD02 - วีรบุรุษปากซอย",
+      "path": "Starter Deck/SD02 - วีรบุรุษปากซอย/info.json"
+    },
+    {
+      "name": "SD03 - นรกก็แค่น้ำพริก",
+      "path": "Starter Deck/SD03 - นรกก็แค่น้ำพริก/info.json"
+    },
+    {
+      "name": "SD04 - ทหารไก่ชนเขา",
+      "path": "Starter Deck/SD04 - ทหารไก่ชนเขา/info.json"
+    },
+    {
+      "name": "SD05 - กำเนิดจากน้ำ",
+      "path": "Starter Deck/SD05 - กำเนิดจากน้ำ/info.json"
+    },
+    {
+      "name": "SD06 - ๖ ประจัญบาน",
+      "path": "Starter Deck/SD06 - ๖ ประจัญบาน/info.json"
+    },
+    {
+      "name": "SD07 - VS 18 หัวเมือง",
+      "path": "Starter Deck/SD07 - VS 18 หัวเมือง/info.json"
+    },
+    {
+      "name": "BT01 - Welcome ตลิ่งชัน",
+      "path": "Booster Set/BT01 - Welcome ตลิ่งชัน/info.json"
+    },
+    {
+      "name": "BT02 - Attack on เพื่อนบ้าน",
+      "path": "Booster Set/BT02 - Attack on เพื่อนบ้าน/info.json"
+    },
+    {
+      "name": "BT03 - อมนุษย์ Invasion",
+      "path": "Booster Set/BT03 - อมนุษย์ Invasion/info.json"
+    },
+    {
+      "name": "BT04 - ความจริง Today",
+      "path": "Booster Set/BT04 - ความจริง Today/info.json"
+    },
+    {
+      "name": "BT05 - Culture ช๊อค",
+      "path": "Booster Set/BT05 - Culture ช๊อค/info.json"
+    },
+    {
+      "name": "BT06 - โลกา Amagedon",
+      "path": "Booster Set/BT06 - โลกา Amagedon/info.json"
+    },
+    {
+      "name": "BT07 - Life of หน่วง",
+      "path": "Booster Set/BT07 - Life of หน่วง/info.json"
+    },
+    {
+      "name": "CC01",
+      "path": "Community Collection/CC01/info.json"
+    },
+    {
+      "name": "ODY1 - Odenya",
+      "path": "Exclusive/ODY1 - Odenya/info.json"
+    },
+    {
+      "name": "SL01",
+      "path": "Selection/SL01/info.json"
+    },
+    {
+      "name": "PRE0",
+      "path": "PRE0/info.json"
+    },
+    {
+      "name": "PromoCard",
+      "path": "PromoCard/info.json"
+    }
+  ]
+}
