@@ -41,8 +41,13 @@ def get_merged_value(cell):
 cards = []
 row = 1
 while True:
-    if ws.cell(row=row, column=2).value is None and row not in images_data:
+    card_name = ws.cell(row=row, column=2).value
+    if not card_name:
         break
+    img_obj = images_data.get(row)
+    if not img_obj:
+        row += 5
+        continue
     card_temp = {}
     first_key = ws.cell(row=row, column=3).value
     if first_key:
@@ -66,21 +71,19 @@ while True:
         card_temp["Color"] = f"#{bg_color[-6:]}"
     else:
         card_temp["Color"] = None
-    img_obj = images_data.get(row)
-    if img_obj:
-        print_code = str(card_temp.get("Print", f"card_{len(cards)+1}")).strip()
-        rarity = str(card_temp.get("Rare", "")).strip()
-        name_part = f"{print_code} ({rarity})" if rarity else print_code
-        safe_name = name_part.replace("/", "-").replace("\\", "-")
-        img_path = os.path.join(output_folder, f"{safe_name}.png")
-        img_obj.save(img_path)
-        card_temp["ImagePath"] = img_path
-    else:
-        card_temp["ImagePath"] = None
-
+    print_code = str(card_temp.get("Print", f"card_{len(cards)+1}")).strip()
+    rarity = str(card_temp.get("Rare", "")).strip()
+    name_part = f"{print_code} ({rarity})" if rarity else print_code
+    safe_name = name_part.replace("/", "-").replace("\\", "-")
+    file_name = f"{safe_name}.png"
+    img_path = os.path.join(output_folder, file_name)
+    img_obj.save(img_path)
+    card_temp["ImagePath"] = file_name
+    details_text = json.dumps(card_temp.get("Details", {}), ensure_ascii=False)
+    if "เมื่อการ์ดใบนี้ถูกหงายจากการโจมตี" in details_text:
+        card_temp["Type"] = "Life"
     if str(card_temp.get("Type", "")).strip().lower() == "life":
         card_temp = {k: v for k, v in card_temp.items() if v not in (None, "", " ")}
-
     card = OrderedDict()
     card["ImagePath"] = card_temp.pop("ImagePath", None)
     for k, v in card_temp.items():
@@ -94,3 +97,4 @@ with open(json_path, "w", encoding="utf-8") as f:
 
 print(f"✅ แปลงเสร็จแล้ว: {json_path}")
 print(f"🖼️ รูปภาพและ JSON ถูกบันทึกในโฟลเดอร์: {output_folder}")
+print(f"📦 รวมทั้งหมด {len(cards)} การ์ดที่มีรูปถูกบันทึกแล้ว")
