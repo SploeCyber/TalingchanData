@@ -953,23 +953,6 @@
   },
   {
     "ImagePath": "PRMO-056 (C Promo).png",
-    "Name": "ชายจากอนาคต",
-    "Type": "Magic",
-    "Cost": "React",
-    "Gem": 0.0,
-    "Power": null,
-    "Symbol": "จอมเวทย์",
-    "Color": null,
-    "Ex": null,
-    "ซอย": 1.0,
-    "Print": "PRMO-056",
-    "Rare": "C Promo",
-    "Details": {
-      "Main Effect": "เมื่อมีการใช้ Magic Card : ยกเลิกการใช้ Magic Card ใบนั้น"
-    }
-  },
-  {
-    "ImagePath": "PRMO-056 (C Promo).png",
     "Name": "อีช่า - สาวน้อยคนเก่ง",
     "Type": "Avatar",
     "Cost": 3.0,
