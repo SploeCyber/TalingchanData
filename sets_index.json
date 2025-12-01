@@ -64,6 +64,10 @@
       "name": "CC01",
       "path": "Community Collection/CC01/info.json"
     },
+	{
+      "name": "CC02",
+      "path": "Community Collection/CC02/info.json"
+    },
     {
       "name": "ODY1 - Odenya",
       "path": "Exclusive/ODY1 - Odenya/info.json"
